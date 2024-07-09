@@ -91,14 +91,14 @@ export function Website() {
           <div className="container mx-auto grid gap-8 px-4 md:grid-cols-2 md:gap-16">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Hello, I'm Sameer Khan
+                Hello, I&apos; m Sameer Khan
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                I'm a passionate software engineering student with a strong
-                interest in building innovative and user-friendly applications.
-                My goal is to leverage my technical skills and problem-solving
-                abilities to contribute to the development of cutting-edge
-                technologies.
+                I&apos; m a passionate software engineering student with a
+                strong interest in building innovative and user-friendly
+                applications. My goal is to leverage my technical skills and
+                problem-solving abilities to contribute to the development of
+                cutting-edge technologies.
               </p>
             </div>
             <div className="grid gap-4">
@@ -218,7 +218,7 @@ export function Website() {
                 <h3 className="text-lg font-semibold">Achievements</h3>
                 <div className="mt-2 flex flex-wrap gap-2">
                   <Badge variant="secondary"> MESA Idea Accelerator@UBER</Badge>
-                  <Badge variant="secondary">Dean's List</Badge>
+                  <Badge variant="secondary">Dean&apos;s List</Badge>
                   <Badge variant="secondary">HackUCI Finalist</Badge>
                   <Badge variant="secondary">
                     International Student Scholarship Recipient
@@ -245,8 +245,8 @@ export function Website() {
                 Portfolio
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                Check out some of my recent projects and applications I've
-                built. I'm always striving to create innovative and
+                Check out some of my recent projects and applications I&apos;ve
+                built. I&apos;m always striving to create innovative and
                 user-friendly solutions.
               </p>
             </div>
@@ -325,7 +325,7 @@ export function Website() {
                 Experience
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                After graduating, I've had the privilege of diving into
+                After graduating, I&apos;ve had the privilege of diving into
                 collaborations with both esteemed companies and exciting
                 startups. Here are some of the roles that have ignited my
                 passion and fueled my journey.
@@ -380,7 +380,7 @@ export function Website() {
                 Get in Touch
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                I'm always excited to connect with new people and explore
+                I &apos; m always excited to connect with new people and explore
                 potential opportunities. Feel free to reach out to me using the
                 contact information below.
               </p>
