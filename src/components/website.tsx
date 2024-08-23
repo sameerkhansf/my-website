@@ -325,10 +325,10 @@ export function Website() {
                 Experience
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
-                After graduating, I&apos;ve had the privilege of diving into
-                collaborations with both esteemed companies and exciting
-                startups. Here are some of the roles that have ignited my
-                passion and fueled my journey.
+                While doing my undergraduate degree, I&apos;ve had the privilege
+                of diving into collaborations with both esteemed companies and
+                exciting startups. Here are some of the roles that have ignited
+                my passion and fueled my journey.
               </p>
             </div>
             <div className="grid gap-4">
