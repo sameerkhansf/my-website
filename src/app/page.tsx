@@ -26,7 +26,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { JSX, SVGProps } from "react";
 
-export function Website() {
+export default function Page() {
   return (
     <div className="flex min-h-dvh flex-col">
       <header className="bg-primary py-6 px-4 md:px-6">
@@ -566,4 +566,3 @@ function PhoneIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-export default Website;
