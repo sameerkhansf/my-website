@@ -391,12 +391,12 @@ export function Website() {
                     khansam@sonoma.edu
                   </a>
                 </div>
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <PhoneIcon className="h-6 w-6 text-muted-foreground" />
                   <a href="#" className="text-muted-foreground hover:underline">
                     +1 (415) 410-3335
                   </a>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-2">
                   <LinkedinIcon className="h-6 w-6 text-muted-foreground" />
                   <a
