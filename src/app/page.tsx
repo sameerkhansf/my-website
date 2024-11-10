@@ -25,7 +25,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { JSX, SVGProps } from "react";
-
+import ExpenseTrackerImage from "@/assets/images/ExpenseTracker.png";
+import Image from "next/image";
 export default function Page() {
   return (
     <div className="flex min-h-dvh flex-col">
@@ -82,12 +83,12 @@ export default function Page() {
               Contact
             </Link>
           </nav>
-          <a
+          {/* <a
             href="#contact"
             className="hidden md:inline-flex text-sm font-medium text-primary-foreground hover:underline"
           >
             Buy me a coffee
-          </a>
+          </a> */}
         </div>
       </header>
       <main className="flex-1">
@@ -113,13 +114,11 @@ export default function Page() {
                 <div className="mt-2">
                   <h4 className="text-md font-semibold">Languages</h4>
                   <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">C++</Badge>
                     <Badge variant="secondary">Python</Badge>
                     <Badge variant="secondary">Java</Badge>
                     <Badge variant="secondary">JavaScript</Badge>
-                    <Badge variant="secondary">C</Badge>
-                    <Badge variant="secondary">C++</Badge>
                     <Badge variant="secondary">HTML/CSS</Badge>
-                    <Badge variant="secondary">Bash</Badge>
                   </div>
                 </div>
 
@@ -147,14 +146,14 @@ export default function Page() {
                 <div className="mt-4">
                   <h4 className="text-md font-semibold">Frameworks</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Flask</Badge>
-                    <Badge variant="secondary">Django</Badge>
+                    <Badge variant="secondary">React</Badge>
+                    <Badge variant="secondary">Redux</Badge>
+                    <Badge variant="secondary">Express</Badge>
+                    <Badge variant="secondary">Material UI</Badge>
+                    <Badge variant="secondary">Django </Badge>
                     <Badge variant="secondary">Node.js</Badge>
-                    <Badge variant="secondary">Keras</Badge>
-                    <Badge variant="secondary">TensorFlow</Badge>
-                    <Badge variant="secondary">PyTorch</Badge>
-                    <Badge variant="secondary">Bootstrap</Badge>
-                    <Badge variant="secondary">Apache Beam</Badge>
+                    <Badge variant="secondary">Tailwind CSS</Badge>
+                    <Badge variant="secondary">Framer Motion</Badge>
                   </div>
                 </div>
 
@@ -165,11 +164,11 @@ export default function Page() {
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Git</Badge>
-                    <Badge variant="secondary">Docker</Badge>
                     <Badge variant="secondary">AWS</Badge>
                     <Badge variant="secondary">GCP</Badge>
-                    <Badge variant="secondary">Heroku</Badge>
-                    <Badge variant="secondary">JIRA</Badge>
+                    <Badge variant="secondary">VS Code</Badge>
+                    <Badge variant="secondary">IntelliJ</Badge>
+                    <Badge variant="secondary">XCode</Badge>
                   </div>
                 </div>
               </div>
@@ -209,10 +208,13 @@ export default function Page() {
                 <div>
                   <h3 className="text-lg font-semibold">Relevant Coursework</h3>
                   <ul className="list-disc space-y-2 pl-4 text-muted-foreground">
+                    <li>Intro to Object-Oriented Programming</li>
                     <li>Data Structures and Algorithms</li>
-                    <li>Software Engineering</li>
+                    <li>Database Management System Design</li>
+                    <li>Computer Architecture</li>
+                    <li>Software Design and Development</li>
+                    <li>Web Development</li>
                     <li>Machine Learning</li>
-                    <li>Database Systems</li>
                   </ul>
                 </div>
               </div>
@@ -223,7 +225,6 @@ export default function Page() {
                 <div className="mt-2 flex flex-wrap gap-2">
                   <Badge variant="secondary"> MESA Idea Accelerator@UBER</Badge>
                   <Badge variant="secondary">Dean&apos;s List</Badge>
-                  <Badge variant="secondary">HackUCI Finalist</Badge>
                   <Badge variant="secondary">
                     International Student Scholarship Recipient
                   </Badge>
@@ -234,7 +235,7 @@ export default function Page() {
                 <div className="mt-2 flex flex-wrap gap-2">
                   <Badge variant="secondary">Computer Science Club</Badge>
                   <Badge variant="secondary">
-                    Associated Students Senator - Student Resources
+                    Male Success Initiative - Student Mentor
                   </Badge>
                   <Badge variant="secondary">Volunteer:Code Tenderlion</Badge>
                 </div>
@@ -267,17 +268,18 @@ export default function Page() {
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <img
-                          src="/placeholder.svg"
-                          alt="Portfolio Project 1"
-                          width={600}
-                          height={400}
-                          className="rounded-lg object-cover"
+                        <Image
+                          src={ExpenseTrackerImage}
+                          alt="Expense Tracker"
+                          width={500}
+                          height={300}
+                          className="rounded-xl shadow-xl"
+                          priority
                         />
                       </CardContent>
                       <CardFooter>
                         <Link
-                          href="#"
+                          href="https://my-website-eight-theta.vercel.app/"
                           className="text-primary hover:underline"
                           prefetch={false}
                         >
@@ -286,10 +288,10 @@ export default function Page() {
                       </CardFooter>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem>
+                  {/* <CarouselItem>
                     <Card>
                       <CardHeader>
-                        <CardTitle>Mobile App</CardTitle>
+                        <CardTitle>Mobile Application</CardTitle>
                         <CardDescription>
                           A cross-platform mobile app built with React Native
                           and Firebase.
@@ -314,7 +316,7 @@ export default function Page() {
                         </Link>
                       </CardFooter>
                     </Card>
-                  </CarouselItem>
+                  </CarouselItem> */}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
@@ -355,24 +357,45 @@ export default function Page() {
                   Elastic Beanstalk, Netlify
                 </p>
                 <p>
-                  <strong>Description:</strong> Developing a founder-investor
-                  platform with features for user authentication, protected
-                  routes, and dynamic forms for onboarding using TypeScript.
-                  Integrated AWS and automated CI/CD pipelines using
-                  CodePipeline. Additionally, created backend in Django and
-                  deployed it on AWS Elastic Beanstalk.
+                  <strong>Description:</strong>
+                  <br />
+                  • Developed a founder-investor platform with features for user
+                  authentication, protected routes, and dynamic forms for
+                  onboarding using Typescript.
+                  <br />
+                  • Automated deployment processes by designing and integrating
+                  CI/CD pipelines with AWS CodePipeline, significantly reducing
+                  deployment time and error rates.
+                  <br />• Collaborated on numerous projects and features in a
+                  team working environment to add onto the company&apos;s site
+                  using languages such as Typescript, CSS, and contributed to
+                  the the backend using Python (Django), while using AWS for the
+                  site&apos;s server and deployment.
                 </p>
               </div>
               <div className="rounded-lg bg-background p-4">
                 <h3 className="text-lg font-semibold">
-                  Software Engineering Intern
+                  Explainable AI in Cancer Diagnosis (Research Fellowship) MESA
+                  Fellows Summer Undergraduate Research
                 </h3>
-                <p className="text-muted-foreground">Company: Facebook</p>
                 <p className="text-muted-foreground">
-                  Location: Menlo Park, CA
+                  <strong>Location:</strong> Rohnert Park, CA
                 </p>
-                <p className="text-muted-foreground">Duration: Summer 2022</p>
-                <p className="text-muted-foreground">Role: Backend Developer</p>
+                <p className="text-muted-foreground">
+                  <strong>Duration:</strong> June 2024 - August 2024
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Role:</strong> Research Fellow
+                </p>
+                <p>
+                  <strong>Description:</strong> Collaborated closely with Dr.
+                  Gill, professor in the CS Department, research on integrating
+                  explainable AI into convolutional neural networks to enhance
+                  cancer diagnosis. Developing models to improve
+                  interpretability and accuracy of predictions, and also working
+                  on making an ensemble CNN model to improve the accuracy of
+                  pre-build CNN&apos;s.
+                </p>
               </div>
             </div>
           </div>
@@ -447,7 +470,7 @@ export default function Page() {
                   className="w-full"
                   required
                 />
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full ">
                   Send Message
                 </Button>
               </form>

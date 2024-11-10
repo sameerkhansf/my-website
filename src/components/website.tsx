@@ -91,7 +91,7 @@ export function Website() {
           <div className="container mx-auto grid gap-8 px-4 md:grid-cols-2 md:gap-16">
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Hello, I&apos; m Sameer Khan
+                Hello, I&apos;m Sameer Khan
               </h2>
               <p className="mt-4 text-muted-foreground md:text-xl">
                 I&apos; m a passionate software engineering student with a
